@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Anastasios Andronidis 'anastasis90@gmail.com'">
+
+	<title>Shifter</title>
+
+	<!-- Core CSS - Include with every page -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<!-- SB Admin CSS - Include with every page -->
+	<link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Shifter</a>
+			</div>
+			<!-- /.navbar-header -->
+		</nav>
+		<!-- /.navbar-static-top -->
+
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav" id="side-menu">
+					<li style="background-color: #cccccc"><br></li>
+					<li>
+						<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+					</li>
+					<li style="background-color: #cccccc"><br></li>
+					<li>
+						<a href="openstack.html"><i class="fa fa-cloud fa-fw"></i> Openstack</a>
+					</li>
+					<li>
+						<a href="daq2.html"><i class="fa fa-flask fa-fw"></i> DAQ 2</a>
+					</li>
+					<li>
+						<a href="maintenance.html"><i class="fa fa-wrench fa-fw"></i> Maintenance</a>
+					</li>
+					<li style="background-color: #cccccc"><br></li>
+					<li>
+						<a href="racks.html"><i class="glyphicon glyphicon-tasks fa-fw"></i> Racks</a>
+					</li>
+					<li>
+						<a href="groups.html"><i class="fa fa-dot-circle-o fa-fw"></i> Groups</a>
+					</li>
+				</ul>
+				<!-- /#side-menu -->
+			</div>
+			<!-- /.sidebar-collapse -->
+		</nav>
+		<!-- /.navbar-static-side -->
+
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Dashboard</h1>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+
+			<!-- /.row -->
+			<div class="row">
+				
+
+			</div>
+			<!-- /.row -->
+				
+			<!-- /.row -->
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Pie Chart Example
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<div class="flot-chart">
+								<div class="flot-chart-content" id="flot-pie-chart"></div>
+							</div>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 col-md-6">
+					<div class="col-lg-6">
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-6">
+										<i class="fa fa-cloud fa-5x"></i>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="announcement-heading">456</p>
+									</div>
+								</div>
+							</div>
+							<a href="#">
+								<div class="panel-footer announcement-bottom">
+									<div class="row">
+										<div class="col-xs-10">View Openstack Hosts</div>
+										<div class="col-xs-2 text-right">
+											<i class="fa fa-arrow-circle-right"></i>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /.col-lg-3 -->
+
+					<div class="col-lg-6">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-6">
+										<i class="fa fa-flask fa-5x"></i>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="announcement-heading">46</p>
+									</div>
+								</div>
+							</div>
+							<a href="#">
+								<div class="panel-footer announcement-bottom">
+									<div class="row">
+										<div class="col-xs-10">View DAQ 2 Hosts</div>
+										<div class="col-xs-2 text-right">
+											<i class="fa fa-arrow-circle-right"></i>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /.col-lg-3 -->
+					<div style="clear:both"></div>
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-6">
+										<i class="fa fa-wrench fa-5x"></i>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="announcement-heading">2</p>
+									</div>
+								</div>
+							</div>
+							<a href="#">
+								<div class="panel-footer announcement-bottom">
+									<div class="row">
+										<div class="col-xs-10">View Hosts in Maintenance</div>
+										<div class="col-xs-2 text-right">
+											<i class="fa fa-arrow-circle-right"></i>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /.col-lg-3 -->
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- Core Scripts - Include with every page -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+	<!-- Page-Level Plugin Scripts - Flot -->
+	<script src="js/plugins/flot/jquery.flot.js"></script>
+	<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+	<!-- SB Admin Scripts - Include with every page -->
+	<script src="js/sb-admin.js"></script>
+
+	<!-- Page-Level Demo Scripts - Flot - Use for reference -->
+	<script src="js/demo/flot-demo.js"></script>
+	
+
+</body>
+
+</html>
