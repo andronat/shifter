@@ -15,7 +15,7 @@
 	<link href="css/custom.css" rel="stylesheet">
 
   <!-- Page-Level Plugin CSS - Tables -->
-  <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="css/dataTables.bootstrap.css" rel="stylesheet">
 
 	<!-- SB Admin CSS - Include with every page -->
 	<link href="css/sb-admin.css" rel="stylesheet">
@@ -537,7 +537,7 @@
   <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
   <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
 	
-	<script type="text/javascript" charset="utf-8" src="js/TableTools.js"></script>
+	<!-- // <script type="text/javascript" charset="utf-8" src="js/TableTools.js"></script> -->
 
 	<!-- SB Admin Scripts - Include with every page -->
 	<script src="js/sb-admin.js"></script>
@@ -549,13 +549,7 @@
 	// });
 	
 	$(document).ready( function () {
-		$('#dataTables-example').dataTable( {
-			"sDom": 'T<"clear">lfrtip',
-			"oTableTools": {
-				"sRowSelect": "multi",
-				"aButtons": [ "select_all", "select_none" ]
-			}
-		} );
+		$('#dataTables-example').dataTable(  );
 	} );
   </script>	
 	
