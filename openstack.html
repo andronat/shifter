@@ -16,6 +16,7 @@
 
   <!-- Page-Level Plugin CSS - Tables -->
   <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+	<link href="css/dataTables.tableTools.css" rel="stylesheet">
 
 	<!-- SB Admin CSS - Include with every page -->
 	<link href="css/sb-admin.css" rel="stylesheet">
@@ -533,23 +534,24 @@
 	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
   <!-- Page-Level Plugin Scripts - Tables -->
-	<!-- <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script> -->
   <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
   <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/dataTables/dataTables.tableTools.js"></script>
 	
-	<!-- // <script type="text/javascript" charset="utf-8" src="js/TableTools.js"></script> -->
-
 	<!-- SB Admin Scripts - Include with every page -->
 	<script src="js/sb-admin.js"></script>
 
   <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-  <script>
-	// $(document).ready(function() {
-	// 	$('#dataTables-example').dataTable();
-	// });
-	
+  <script>	
 	$(document).ready( function () {
-		$('#dataTables-example').dataTable(  );
+		$('#dataTables-example').dataTable( {
+			// "sDom": "<'row-fluid'<'span6'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+			"sDom" : 'T<"clear">lfrtip',
+			"oTableTools": {
+				"sRowSelect": "multi",
+				"aButtons": [ "select_all", "select_none" ]
+			}
+		} );
 	} );
   </script>	
 	
